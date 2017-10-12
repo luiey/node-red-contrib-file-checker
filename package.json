@@ -1,0 +1,24 @@
+{
+	"name": "node-red-contrib-file-checker",
+	"version": "0.0.1",
+	"description": "A Node-RED node to check if file exist"
+	},
+	"repository": {},
+	"keywords": [
+	"node-red",
+	"file-checker"
+	],
+	"node-red": {
+	"nodes": {
+	  "file-checker": "51-file-exist.js"
+	}
+	},
+	"author": {
+	"name": "Luiey",
+	"email": "fadhliazmin@gmail.com",
+	"url": "http://nodered.org"
+	},
+	"readme": "ERROR: No README data found!",
+	"_id": "node-red-contrib-file-checker@0.0.1",
+	"_from": "node-red-contrib-file-checker-0.0.1.tar.gz"
+}

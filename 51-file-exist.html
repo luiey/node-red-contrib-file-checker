@@ -1,0 +1,33 @@
+<script type="text/x-red" data-template-name="filechecker">
+       <div class="form-row">
+        <label for="node-input-filename"><i class="fa fa-random"></i> File Path</label>
+        <input type="text" id="node-input-filename" placeholder="File Path">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="File Checker">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="filechecker">
+	<p>File path must include the file extension. Use escape character for path. Example: "C:\\FolderName\\Filename.txt"</p>
+    <p>Insert filename in the input. Or for dynamic path, write path into <code>msg.filename</code> before passing to this node.</p>
+    <p>Returns <b>false</b> if path not exist.</p>
+</script>
+
+<script type="text/javascript">
+    RED.nodes.registerType('filechecker',{
+        category: 'storage-input',
+        defaults: {
+			filename: {value:""},
+            name: {value:""}
+        },
+        color:"#BB8FCE",
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||this.filename||"File Checker";
+        }
+    });
+</script>
